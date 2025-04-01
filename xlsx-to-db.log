@@ -1,0 +1,46 @@
+2025-04-01T10:51:36.770Z info: Starting XLSX to database import process
+2025-04-01T10:51:36.784Z info: Processed 2 records from the workbook
+2025-04-01T10:51:36.821Z info: Successfully inserted 2 records into table "people"
+2025-04-01T10:51:36.822Z info: Import completed successfully in 0.05 seconds
+2025-04-01T10:51:37.357Z info: Starting XLSX to database import process
+2025-04-01T10:51:38.023Z error: Error during import: Failed to load workbook: Error fetching file from URL: Request failed with status code 404
+2025-04-01T10:51:38.280Z info: Starting XLSX to database import process
+2025-04-01T10:51:38.294Z info: Processed 2 records from the workbook
+2025-04-01T10:51:38.312Z info: Successfully inserted 2 records into table "custom_table"
+2025-04-01T10:51:38.313Z info: Import completed successfully in 0.03 seconds
+2025-04-01T10:54:51.138Z info: Starting XLSX to database import process
+2025-04-01T10:54:51.153Z info: Processed 2 records from the workbook
+2025-04-01T10:54:51.178Z info: Successfully inserted 2 records into table "people"
+2025-04-01T10:54:51.179Z info: Import completed successfully in 0.04 seconds
+2025-04-01T10:54:51.295Z info: Starting XLSX to database import process
+2025-04-01T10:54:51.310Z info: Processed 2 records from the workbook
+2025-04-01T10:54:51.335Z info: Successfully inserted 2 records into table "people"
+2025-04-01T10:54:51.336Z info: Import completed successfully in 0.04 seconds
+2025-04-01T10:54:51.782Z info: Starting XLSX to database import process
+2025-04-01T10:54:51.943Z info: Starting XLSX to database import process
+2025-04-01T10:54:52.319Z error: Error during import: Failed to load workbook: Error fetching file from URL: Request failed with status code 404
+2025-04-01T10:54:52.576Z info: Starting XLSX to database import process
+2025-04-01T10:54:52.590Z info: Processed 2 records from the workbook
+2025-04-01T10:54:52.609Z info: Successfully inserted 2 records into table "custom_table"
+2025-04-01T10:54:52.609Z info: Import completed successfully in 0.03 seconds
+2025-04-01T10:54:52.765Z error: Error during import: Failed to load workbook: Error fetching file from URL: Request failed with status code 404
+2025-04-01T10:56:17.159Z info: Starting XLSX to database import process
+2025-04-01T10:56:17.173Z info: Processed 2 records from the workbook
+2025-04-01T10:56:17.168Z info: Starting XLSX to database import process
+2025-04-01T10:56:17.183Z info: Processed 2 records from the workbook
+2025-04-01T10:56:17.204Z info: Successfully inserted 2 records into table "people"
+2025-04-01T10:56:17.204Z info: Import completed successfully in 0.05 seconds
+2025-04-01T10:56:17.212Z info: Successfully inserted 2 records into table "people"
+2025-04-01T10:56:17.212Z info: Import completed successfully in 0.05 seconds
+2025-04-01T10:56:17.767Z info: Starting XLSX to database import process
+2025-04-01T10:56:17.790Z info: Starting XLSX to database import process
+2025-04-01T10:56:18.228Z error: Error during import: Failed to load workbook: Error fetching file from URL: Request failed with status code 404
+2025-04-01T10:56:18.470Z error: Error during import: Failed to load workbook: Error fetching file from URL: Request failed with status code 404
+2025-04-01T10:56:18.475Z info: Starting XLSX to database import process
+2025-04-01T10:56:18.489Z info: Processed 2 records from the workbook
+2025-04-01T10:56:18.514Z info: Successfully inserted 2 records into table "custom_table"
+2025-04-01T10:56:18.515Z info: Import completed successfully in 0.04 seconds
+2025-04-01T10:56:18.758Z info: Starting XLSX to database import process
+2025-04-01T10:56:18.773Z info: Processed 2 records from the workbook
+2025-04-01T10:56:18.797Z info: Successfully inserted 2 records into table "custom_table"
+2025-04-01T10:56:18.798Z info: Import completed successfully in 0.04 seconds
