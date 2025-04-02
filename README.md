@@ -115,7 +115,10 @@ xlsx-to-db --input ministry_data.xlsx --config ./production.env
 Below is a screenshot of the application importing 10,000 records in under 5 seconds:
 
 ![Performance Screenshot]
-![alt text](image.png)
+![alt text](best_performance.png)
+
+![View on DB Browser]
+![alt text](db_overview.png)
 
 ## Testing
 
@@ -139,3 +142,4 @@ npm run build
 Executables will be available in the `dist` directory for Linux, macOS, and Windows.
 
 ## License
+Empty
