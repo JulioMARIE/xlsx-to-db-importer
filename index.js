@@ -253,80 +253,6 @@ const parseXlsxFile = (filePath) => {
   }
 };
 
-// Function to import data into database with duplicate handling
-// const importData = async (db, tableName, data) => {
-//   try {
-//     const startTime = performance.now();
-//     let inserted = 0;
-//     let updated = 0;
-//     let skipped = 0;
-//     let failed = 0;
-    
-//     // Use a transaction for better performance and atomicity
-//     await db.transaction(async (trx) => {
-//       // Process records individually to handle duplicates
-//       for (const record of data) {
-//         try {
-//           // Check if a record with the same matricule already exists
-//           if ('matricule' in record) {
-//             const existing = await trx(tableName)
-//               .where('matricule', record.matricule)
-//               .first();
-            
-//             if (existing) {
-//               // Handle duplicate based on the mode
-//               if (options.handleDuplicates === 'skip') {
-//                 console.log(`Skipping duplicate matricule: ${record.matricule}`);
-//                 skipped++;
-//                 continue;
-//               } else if (options.handleDuplicates === 'update') {
-//                 // Update the existing record
-//                 await trx(tableName)
-//                   .where('matricule', record.matricule)
-//                   .update(record);
-                
-//                 updated++;
-//                 continue;
-//               } else if (options.handleDuplicates === 'error') {
-//                 throw new Error(`Duplicate matricule: ${record.matricule}`);
-//               }
-//             }
-//           }
-          
-//           // Insert new record
-//           await trx(tableName).insert(record);
-//           inserted++;
-//         } catch (err) {
-//           console.error(`Error processing record: ${err.message}`);
-//           console.error(record);
-//           failed++;
-          
-//           // Don't fail the entire transaction for a single record
-//           if (options.handleDuplicates !== 'skip' && options.handleDuplicates !== 'update') {
-//             throw err;
-//           }
-//         }
-//       }
-//     });
-    
-//     const endTime = performance.now();
-//     const duration = (endTime - startTime) / 1000; // Convert to seconds
-    
-//     return {
-//       success: true,
-//       inserted,
-//       updated,
-//       skipped,
-//       failed,
-//       total: data.length,
-//       duration
-//     };
-//   } catch (error) {
-//     console.error(`Error importing data: ${error.message}`);
-//     throw error;
-//   }
-// };
-
 // Function to handle stdin input
 const readStdin = () => {
   return new Promise((resolve, reject) => {
@@ -619,11 +545,3 @@ const main = async () => {
 
 // Run the application
 main();
-
-module.exports = {
-  standardizeDate,
-  normalizeColumnName,
-  parseXlsxFile,
-  createTableSchema,
-  importData
-};
