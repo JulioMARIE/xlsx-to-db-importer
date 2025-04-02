@@ -118,10 +118,15 @@ Below is a screenshot of the application importing 10,000 records in under 5 sec
 # Run test
 ```bash
 FILE_PATH=./test.xlsx npm test
+```
+or
 
+```bash
 npm test
+```
 
 # Run linting
+```bash
 npm run lint
 ```
 
