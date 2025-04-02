@@ -37,24 +37,17 @@ chmod +x index.js
 npm link
 ```
 
-### As a Package
-
-```bash
-# Install globally from npm
-npm install -g xlsx-to-db-importer
-```
-
 ## Usage
 
 ```bash
 # Basic usage with a file
-xlsx-to-db --input data.xlsx --database mysql --table persons --create-table
+xlsx-to-db --input test.xlsx --database sqlite --table persons --create-table
 
 # Using stdin (pipe)
-cat data.xlsx | xlsx-to-db --database postgres --table persons
+cat test.xlsx | xlsx-to-db --database sqlite --table persons
 
-# Using with a specific database configuration
-xlsx-to-db --input data.xlsx --database mysql --config ./db.config.env
+# Using with a specific database configuration (see configuration part)
+xlsx-to-db --input test.xlsx --database sqlite --create-table --config ./.env
 ```
 
 ### Options
@@ -95,19 +88,19 @@ TABLE_NAME=persons
 ### Import from a file to SQLite
 
 ```bash
-xlsx-to-db --input ministry_data.xlsx --database sqlite --table persons --create-table
+xlsx-to-db --input your_file.xlsx --database sqlite --table persons --create-table
 ```
 
 ### Import from stdin to MySQL
 
 ```bash
-cat ministry_data.xlsx | xlsx-to-db --database mysql --table persons
+cat your_file.xlsx | xlsx-to-db --database mysql --table persons
 ```
 
 ### Import with predefined configuration
 
 ```bash
-xlsx-to-db --input ministry_data.xlsx --config ./production.env
+xlsx-to-db --input your_file.xlsx --create-table --config ./production.env
 ```
 
 ## Performance
