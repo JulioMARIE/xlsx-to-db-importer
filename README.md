@@ -115,7 +115,7 @@ Below is a screenshot of the application importing 10,000 records in under 5 sec
 
 ## Testing
 
-# Run test
+### Run test
 ```bash
 FILE_PATH=./test.xlsx npm test
 ```
@@ -125,7 +125,7 @@ or
 npm test
 ```
 
-# Run linting
+### Run linting
 ```bash
 npm run lint
 ```
